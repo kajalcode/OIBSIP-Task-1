@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#228C22"
+        android:text="Unit Converter"
+        android:textSize="35dp"
+        android:textStyle="bold"
+        android:layout_gravity="center"
+        android:padding="0dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="30dp"
+        android:paddingBottom="0dp"
+        />
+    <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="0dp"
+        android:orientation="vertical">
+        <RadioButton android:id="@+id/length"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Meter to Centimeter"
+            android:textSize="18dp"
+            android:onClick="onRadioButtonClicked"/>
+        <RadioButton android:id="@+id/temperature"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Centimeter to Meter"
+            android:textSize="18dp"
+            android:layout_marginTop="15dp"
+            android:onClick="onRadioButtonClicked"/>
+
+        <RadioButton android:id="@+id/weight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Kilogram to Gram"
+            android:layout_marginTop="15dp"
+            android:textSize="18dp"
+            android:onClick="onRadioButtonClicked"/>
+        <RadioButton android:id="@+id/currency"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Gram to Kilogram"
+            android:layout_marginTop="15dp"
+            android:textSize="18dp"
+            android:checked="true"
+            android:onClick="onRadioButtonClicked"/>
+
+    </RadioGroup>
+    <EditText
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"
+        android:hint="Enter value"
+        android:layout_marginTop="50dp"
+        android:layout_gravity="center"
+        android:id="@+id/input"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:id="@+id/value1"
+        android:padding="10dp"/>
+
+
+    <!--    <TextView-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:id="@+id/value2"-->
+<!--        android:padding="10dp"-->
+<!--        />-->
+<!--    <TextView-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:id="@+id/value3"-->
+<!--        android:padding="10dp"-->
+<!--        />-->
+<!--    <TextView-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:padding="10dp"-->
+<!--        android:id="@+id/value4"-->
+<!--        />-->
+
+</LinearLayout>
